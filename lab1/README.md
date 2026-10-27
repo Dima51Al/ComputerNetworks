@@ -23,7 +23,7 @@ docker compose ps
 docker exec pg-master patronictl -c /postgres0.yml list
 ```
 
-Дождитесь появления Leader и Sync Standby в состоянии streaming.
+Дождитесь состояния running у Leader и streaming у Sync Standby.
 
 Подключение к базе через HAProxy:
 
